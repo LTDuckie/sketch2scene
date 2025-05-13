@@ -39,13 +39,13 @@ Save your glb file.
 
 **Demo:**  
 Input Sketch:    
-<img src="https://github.com/user-attachments/assets/6dcc83a1-b1ba-42f0-bda5-3187e994c9a0"  width="300" />
+<img src="https://github.com/user-attachments/assets/6dcc83a1-b1ba-42f0-bda5-3187e994c9a0"  width="300" />  
 After stage 1  
-<img src="https://github.com/user-attachments/assets/54e2715b-96da-4458-848f-acb97c36eec2"  width="300" />
+<img src="https://github.com/user-attachments/assets/54e2715b-96da-4458-848f-acb97c36eec2"  width="300" />  
 After stage 2  
-<img src="https://github.com/user-attachments/assets/a96b3920-91cd-4b9b-ba82-e70efce781b3"  width="300" />
+<img src="https://github.com/user-attachments/assets/a96b3920-91cd-4b9b-ba82-e70efce781b3"  width="300" />  
 After stage 3 & 4  
-<img src="https://github.com/user-attachments/assets/de4b4925-ddc9-4366-a240-cf6400e7d44c"  width="600" />
+<img src="https://github.com/user-attachments/assets/de4b4925-ddc9-4366-a240-cf6400e7d44c"  width="600" />  
 
 
 ## refs
