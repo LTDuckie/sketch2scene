@@ -38,12 +38,13 @@ Draw your sketch in **flowty-realtime-lcm-canvas** web, do img2img for image ref
 Save your glb file.
 
 **Demo:**  
-In stage 1  
+Input Sketch:    
 ![ab3ccd44d64fc6fec4fcb3323e04f9e](https://github.com/user-attachments/assets/6dcc83a1-b1ba-42f0-bda5-3187e994c9a0)  
-In stage 2  
+After stage 1  
 ![7260b300ee0f96aab0e4707e56557aa](https://github.com/user-attachments/assets/54e2715b-96da-4458-848f-acb97c36eec2)  
-In stage 3 & 4  
+After stage 2  
 ![b4ce8e3544ffd066bc887824360488b](https://github.com/user-attachments/assets/a96b3920-91cd-4b9b-ba82-e70efce781b3)  
+After stage 3 & 4  
 ![be84716d18cb0c6c13fb75fff311be2](https://github.com/user-attachments/assets/de4b4925-ddc9-4366-a240-cf6400e7d44c)  
 
 
