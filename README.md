@@ -39,6 +39,7 @@ Save your glb file.
 
 **Demo:**  
 Input Sketch:    
+<img src="https://github.com/user-attachments/assets/6dcc83a1-b1ba-42f0-bda5-3187e994c9a0"  width="600" />
 ![ab3ccd44d64fc6fec4fcb3323e04f9e](https://github.com/user-attachments/assets/6dcc83a1-b1ba-42f0-bda5-3187e994c9a0 =600x)  
 After stage 1  
 ![7260b300ee0f96aab0e4707e56557aa](https://github.com/user-attachments/assets/54e2715b-96da-4458-848f-acb97c36eec2 =600x)  
