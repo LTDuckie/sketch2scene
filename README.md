@@ -61,7 +61,7 @@ In "Image refinement with StableDiffusion", if the port of your _stable_diffusio
 If you are not satisfied with the result, you could reset up sd-webui api with new parameters. The instructions are in the cell in raw.  
 #### Segmentation Stage
 It is suggested that you run the segmentation in MIDI-3D webui so that you could manually set the number of objects and their positions.  
-Auto-segmentation doesn't reach the effect of manual one. As a comparison, see:  
+Auto-segmentation doesn't reach the effect of manual one. As a comparison, the former one is generated automactically and the latter manually:  
 ![auto-segmentation](https://github.com/user-attachments/assets/a6954143-39a0-4073-8422-b83327e655be)  
 ![manual segmentation in web](https://github.com/user-attachments/assets/36e60e71-403b-4a5e-8b72-21072c416f5d)  
 #### Model generation Stage
@@ -70,7 +70,8 @@ If you skip the auto-segmentation and manually get one, please edit:
 # source
 src_seg_image = your_new_seg_img_path
 ```
-You'll get a path of the generated glb file of your sketch in the output of the last cell. e.g: glb file generated at MIDI-3D/output/2025-05-13 16_51_42/output.glb  
+You'll get a path of the generated glb file of your sketch in the output of the last cell.  
+e.g: glb file generated at MIDI-3D/output/2025-05-13 16_51_42/output.glb  
 <img src="https://github.com/user-attachments/assets/a5c54e81-9291-4bdd-8de9-3ccc57f583bd"  width="300" />  
 
 **Demo:**  
@@ -82,13 +83,13 @@ Draw your sketch in **flowty-realtime-lcm-canvas** web, do img2img for image ref
 Save your glb file.
 
 **Demo:**  
-Draw Sketch:    
-<img src="[Your input sketch](https://github.com/user-attachments/assets/6dcc83a1-b1ba-42f0-bda5-3187e994c9a0)"  width="300" />  
-After stage 1  
+Draw Sketch in **flowty-realtime-lcm-canvas**:    
+<img src="https://github.com/user-attachments/assets/6dcc83a1-b1ba-42f0-bda5-3187e994c9a0"  width="300" />  
+After **Sketch to Image Stage** you get:    
 <img src="https://github.com/user-attachments/assets/54e2715b-96da-4458-848f-acb97c36eec2"  width="300" />  
-After stage 2  
+Put it into **Stable Diffusion WebUI**, you get:  
 <img src="https://github.com/user-attachments/assets/a96b3920-91cd-4b9b-ba82-e70efce781b3"  width="300" />  
-After stage 3 & 4  
+With this refined image, in  **MIDI**, you get:  
 <img src="https://github.com/user-attachments/assets/de4b4925-ddc9-4366-a240-cf6400e7d44c"  width="600" />  
 
 
