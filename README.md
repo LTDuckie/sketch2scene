@@ -6,12 +6,14 @@ sketch2scene
 ├── MIDI-3D  
 ├── ...  
 ...  
+If you run Stable Diffusion WebUI as a background process and use API during this pipeline, you could also install it anywhere you like as long as you have the web link(port).  
 
 ### flowty-realtime-lcm-canvas: 
 repository: https://github.com/flowtyone/flowty-realtime-lcm-canvas.git  
 
 ### Stable Diffusion WebUI
 repository: https://github.com/AUTOMATIC1111/stable-diffusion-webui  
+click-to-start version in bilibili: https://www.bilibili.com/video/BV1iM4y1y7oA
 
 ### MIDI: Multi-Instance Diffusion for Single Image to 3D Scene Generation: 
 repository: https://github.com/VAST-AI-Research/MIDI-3D.git  
