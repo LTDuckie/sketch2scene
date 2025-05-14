@@ -1,5 +1,5 @@
 ## Preparations
-Please download and set up these projects in the parent folder.  
+Please download and set up these projects as they instructed in the parent folder.  
   
 sketch2scene  
 ├── flowty-realtime-lcm-canvas  
