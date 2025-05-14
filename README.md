@@ -1,5 +1,7 @@
 # Sketch to Scene
 The "Sketch to Scene" project aims to transform hand - drawn sketches into 3D scenes. It involves multiple stages including sketch to image conversion, image refinement, image segmentation and 3D model generation. This project combines different technologies and libraries to achieve the goal, providing an innovative way to bring 2D sketches to life in a 3D space.  
+demo video on google drive: https://drive.google.com/file/d/1K-X5zPrFIk-PgVsFl9T_C5wUxHv5rZo0/view?usp=sharing
+
   
 ## Preparations
 Please download and set up these projects as they instructed in the parent folder.  
