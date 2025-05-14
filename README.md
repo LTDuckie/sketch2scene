@@ -25,6 +25,7 @@ run `pip install -r requirements`
 It is suggested that you must build a virtual env for **flowty-realtime-lcm-canvas** with gradio version 3.44.1.  
 Please run **Stable Diffusion WebUI** with port 7862 and **flowty-realtime-lcm-canvas** with 7860.  
 Conda is needed for this project.  
+It would be better if your input sketch image has nearly equivelant width and height.
 
 ## Launch:
 ### Automatically
