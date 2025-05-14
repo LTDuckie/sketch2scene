@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 ### 1.1 Project Introduction
-The "Sketch to Scene" project aims to transform hand - drawn sketches into 3D scenes. It involves multiple stages such as sketch to image conversion, image refinement, and 3D model generation. This project combines different technologies and libraries to achieve its goal, providing an innovative way to bring 2D sketches to life in a 3D space.
+The "Sketch to Scene" project aims to transform hand - drawn sketches into 3D scenes. It involves multiple stages including sketch to image conversion, image refinement, image segmentation and 3D model generation. This project combines different technologies and libraries to achieve the goal, providing an innovative way to bring 2D sketches to life in a 3D space.
 
 ### 1.2 GitHub Repository
 The project's source code and documentation are available on GitHub at [https://github.com/LTDuckie/sketch2scene/blob/master/README.md](https://github.com/LTDuckie/sketch2scene/blob/master/README.md).
