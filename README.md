@@ -37,7 +37,7 @@ If there are some issues with that, you could instead run `pip install library1,
   
 ## Launch:
 ### Automatically
-I recommend this way when your sketch is not complex and not is without occlusion.  
+I recommend this way when your sketch is not complex and is without occlusion.  
   
 Open notebook file _sketch2scene.ipynb_ and run.  
 #### Imports
@@ -83,7 +83,7 @@ If you are not satisfied with the result, you could reset up sd-webui api with n
 #### Segmentation Stage
 It is suggested that you run the segmentation in MIDI-3D webui so that you could manually set the number of objects and their positions.  
 <img src="https://github.com/user-attachments/assets/7b6eec44-3dd6-4412-97ba-ee9568219683"  width="300" />   
-Auto-segmentation doesn't reach the effect of manual one. In comparison, see the "manually" part.  
+Auto-segmentation doesn't reach the effect of manual one. In comparison, see the "note" part.  
   
 #### Model generation Stage
 If you skip the auto-segmentation and manually get one, please edit:  
