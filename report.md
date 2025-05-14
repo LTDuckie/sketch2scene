@@ -11,12 +11,27 @@ The project's source code and documentation are available on GitHub at [https://
 ### 2.1 Related Work
 The field of converting 2D sketches to 3D models has seen significant development in recent years. Technologies like Stable Diffusion have been widely used for image generation and refinement. For example, the Stable Diffusion WebUI is a popular tool that allows users to generate high - quality images based on text prompts and input images. 
 
+Image to Model:  
 The MIDI (Multi - Instance Diffusion for Single Image to 3D Scene Generation) approach introduced in the paper [@article{huang2024midi,  
   title={MIDI: Multi-Instance Diffusion for Single Image to 3D Scene Generation},  
   author={Huang, Zehuan and Guo, Yuanchen and An, Xingqiao and Yang, Yunhan and Li, Yangguang and Zou, Zixin and Liang, Ding and Liu, Xihui and Cao, Yanpei and Sheng, Lu},  
   journal={arXiv preprint arXiv:2412.03558},  
   year={2024}  
-}] is also a key reference for this project. It provides a method for generating 3D scenes from a single image.
+}] is also a key reference for this project. It provides a method for generating 3D scenes from a single image.  
+
+Sketch to model： 
+Sketch2Model: View-Aware 3D Modeling from Single Free-Hand Sketches  
+
+Sketch to scene： 
+Sketch2Scene: Sketch-based Co-retrieval and Co-placement of 3D Models  
+
+Sketch to image: 
+flowty - realtime - lcm - canvas  
+
+Depth and segmentation of Image:  
+  
+Image to Image generation:  
+
 
 ### 2.2 Motivation
 The motivation behind this project is to simplify the process of 3D scene creation. Traditional 3D modeling methods often require professional skills and a significant amount of time. By using sketches as input, users with basic drawing skills can quickly generate 3D scenes, which has potential applications in fields such as game development, interior design, and virtual reality.
@@ -45,7 +60,15 @@ The necessary libraries are listed in the `requirements.txt` file. Users can run
 This method is recommended for complex sketches with many objects and occlusion. Users need to run `ui.py` in `flowty - realtime - lcm - canvas`, `webui - user.py` in `Stable Diffusion WebUI`, and `gradio_demo.py` in `MIDI`. They draw the sketch in the `flowty - realtime - lcm - canvas` web, perform image refinement in the `Stable Diffusion WebUI`, and then run image segmentations and model generations in `MIDI - 3D`. Finally, they save the generated glb file.
 
 ### 3.3 Experiments
-We conducted experiments using different types of sketches, including simple sketches without occlusion and complex sketches with multiple objects. For simple sketches, the automatic launch method worked well, generating 3D models in a relatively short time. However, for complex sketches, the manual launch method provided better results as it allowed for more control over the segmentation and generation process.
+We conducted experiments using different types of sketches, including simple sketches without occlusion and complex sketches with multiple objects. For simple sketches, the automatic launch method worked well, generating 3D models in a relatively short time. However, for complex sketches, the manual launch method provided better results as it allowed for more control over the segmentation and generation process.  
+![3fb5bdbf3b12972c0b56bd6cf5b062f](https://github.com/user-attachments/assets/2c7d60b6-6254-4f5c-8487-7492227c35af)  
+![064c50753637540f5344409db3ddd8f](https://github.com/user-attachments/assets/98fe1f8a-5f63-4610-a57c-229086639a97)  
+
+
+![ea39b746ebaccc2a8384736f43111b6](https://github.com/user-attachments/assets/5cf046b9-81b7-478f-abd9-7862bab14748)  
+![67361373137bed683171385fe03de15](https://github.com/user-attachments/assets/3198ef11-6b6e-46f3-b232-86ff24654503)  
+![d059dff9ca61344a3c14c20be6ba019](https://github.com/user-attachments/assets/c1554f07-6da8-435a-944f-bfbd72aafdb8)  
+![cce1eccc4ea0dada2c5216ad7504421](https://github.com/user-attachments/assets/48328513-d4ef-45b4-8206-969a0445d76e)  
 
 ## 4. Critical Self - Evaluation
 ### 4.1 Strengths
