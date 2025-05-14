@@ -7,6 +7,10 @@ The "Sketch to Scene" project aims to transform hand - drawn sketches into 3D sc
 ### 1.2 GitHub Repository
 The project's source code and documentation are available on GitHub at [https://github.com/LTDuckie/sketch2scene/blob/master](https://github.com/LTDuckie/sketch2scene/blob/master).
 
+### 1.3 Demo Video
+demo video on google drive: https://drive.google.com/file/d/1K-X5zPrFIk-PgVsFl9T_C5wUxHv5rZo0/view?usp=sharing  
+demo video on bilibili: https://www.bilibili.com/video/BV1dQEeznEub/  
+
 ## 2. Background Research
 ### 2.1 Related Work
 The field of converting 2D sketches to 3D models has seen significant development in recent years. Technologies like Stable Diffusion have been widely used for image generation and refinement. For example, the Stable Diffusion WebUI is a popular tool that allows users to generate high - quality images based on text prompts and input images. 
