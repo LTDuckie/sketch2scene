@@ -1,4 +1,5 @@
-## Please download and set up these projects in the parent folder.
+## Preparations
+Please download and set up these projects in the parent folder.  
   
 sketch2scene  
 ├── flowty-realtime-lcm-canvas  
@@ -20,6 +21,8 @@ repository: https://github.com/VAST-AI-Research/MIDI-3D.git
   
 ### Libraries Preparation
 run `pip install -r requirements`  
+These are libraries you need apart from requirements of the three given repositories.  
+If there are some issues with that, you could instead run `pip install library1, library2, ...` in _imports_ in notebook file _sketch2scene.ipynb_.  
   
 ## Note:
 - It is suggested that you must build a virtual env for **flowty-realtime-lcm-canvas** with gradio version 3.44.1.  
