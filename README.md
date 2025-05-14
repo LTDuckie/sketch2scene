@@ -1,5 +1,5 @@
 ## Please download and set up these projects in the parent folder.
-
+  
 sketch2scene  
 ├── flowty-realtime-lcm-canvas  
 ├── Stable Diffusion WebUI  
@@ -7,33 +7,36 @@ sketch2scene
 ├── ...  
 ...  
 If you run Stable Diffusion WebUI as a background process and use API during this pipeline, you could also install it anywhere you like as long as you have the web link(port).  
-
+  
 ### flowty-realtime-lcm-canvas: 
 repository: https://github.com/flowtyone/flowty-realtime-lcm-canvas.git  
-
+  
 ### Stable Diffusion WebUI
 repository: https://github.com/AUTOMATIC1111/stable-diffusion-webui  
 click-to-start version in bilibili: https://www.bilibili.com/video/BV1iM4y1y7oA
-
+  
 ### MIDI: Multi-Instance Diffusion for Single Image to 3D Scene Generation: 
 repository: https://github.com/VAST-AI-Research/MIDI-3D.git  
-
+  
 ### Libraries Preparation
 run `pip install -r requirements`  
-
+  
 ## Note:
 It is suggested that you must build a virtual env for **flowty-realtime-lcm-canvas** with gradio version 3.44.1.  
 Please run **Stable Diffusion WebUI** with port 7862 and **flowty-realtime-lcm-canvas** with 7860.  
 Conda is needed for this project.  
 It would be better if your input sketch image has nearly equivelant width and height.
-
+  
 ## Launch:
 ### Automatically
+I recommend this way when your sketch is not complex and not is without occlusion.  
+  
 Open notebook file _sketch2scene.ipynb_ and run.  
 #### Imports
 Paths of Windows flowty_env␣ and sketch_path should be set as yours.  
 In the second cell: `flowty_env = r"Your flowty_env Python path"`  
 In the third cell: `sketch_path = "Your sketch image path"`   
+  
 #### Sketch to Image Stage
 In "Prompts": `Prompt = input('Please simply describe your sketch with few words: ')`, input is required.  
 In "Sketch to Image": If  
@@ -48,6 +51,7 @@ subprocess.run(
 returncode != 0, you could wait for some time until _sketch_to_image_process_ is fully started.  
 If the port of your _sketch_to_image_client_ is not 7860, you could open _sketch_to_image.py_ and edit `sketch_to_image_client = Client("Your client web link")`  
 If you are not satisfied with the initial result, you could open _sketch_to_image.py_ and edit parameters in `sketch_to_image_result = sketch_to_image_client.predict...`  or edit your prompts.  
+  
 #### Image refinement Stage
 If you don't have sdwebui as a Background Process at the moment, activate the cell and run  
 ```
@@ -62,11 +66,13 @@ await asyncio.sleep(10)
 To avoid some mistakes, you could also start running webui-user.py in cmd/shell so that the following process could go on.  
 In "Image refinement with StableDiffusion", if the port of your _stable_diffusion_webui_ is not 7862, you could edit `url = "your sd-webui web link"`  
 If you are not satisfied with the result, you could reset up sd-webui api with new parameters. The instructions are in the cell in raw.  
+  
 #### Segmentation Stage
 It is suggested that you run the segmentation in MIDI-3D webui so that you could manually set the number of objects and their positions.  
 Auto-segmentation doesn't reach the effect of manual one. As a comparison, the former one is generated automactically and the latter manually:  
 ![auto-segmentation](https://github.com/user-attachments/assets/a6954143-39a0-4073-8422-b83327e655be)  
 ![manual segmentation in web](https://github.com/user-attachments/assets/36e60e71-403b-4a5e-8b72-21072c416f5d)  
+  
 #### Model generation Stage
 If you skip the auto-segmentation and manually get one, please edit:  
 ```
@@ -76,11 +82,13 @@ src_seg_image = your_new_seg_img_path
 You'll get a path of the generated glb file of your sketch in the output of the last cell.  
 e.g: glb file generated at MIDI-3D/output/2025-05-13 16_51_42/output.glb  
 <img src="https://github.com/user-attachments/assets/a5c54e81-9291-4bdd-8de9-3ccc57f583bd"  width="300" />  
-
+  
 **Demo:**  
 See Notebook file _sketch2scene.ipynb_.  
 
 ### Manually
+I recommend this way when you target at complex tasks which means there are many objects and occlusion in your sketch.
+  
 Run ui.py in **flowty-realtime-lcm-canvas**, webui-user.py in **Stable Diffusion WebUI** and gradio_demo.py in **MIDI**.  
 Draw your sketch in **flowty-realtime-lcm-canvas** web, do img2img for image refinement in **Stable Diffusion WebUI** and then run image segmentations and model generations in **MIDI-3D**.  
 Save your glb file.
@@ -88,14 +96,16 @@ Save your glb file.
 **Demo:**  
 Draw Sketch in **flowty-realtime-lcm-canvas**:    
 <img src="https://github.com/user-attachments/assets/6dcc83a1-b1ba-42f0-bda5-3187e994c9a0"  width="300" />  
+  
 After **Sketch to Image Stage** you get:    
 <img src="https://github.com/user-attachments/assets/54e2715b-96da-4458-848f-acb97c36eec2"  width="300" />  
+  
 Put it into **Stable Diffusion WebUI**, you get:  
 <img src="https://github.com/user-attachments/assets/a96b3920-91cd-4b9b-ba82-e70efce781b3"  width="300" />  
+  
 With this refined image, in  **MIDI**, you get:  
 <img src="https://github.com/user-attachments/assets/de4b4925-ddc9-4366-a240-cf6400e7d44c"  width="600" />  
-
-
+  
 ## refs
 @article{huang2024midi,  
   title={MIDI: Multi-Instance Diffusion for Single Image to 3D Scene Generation},  
