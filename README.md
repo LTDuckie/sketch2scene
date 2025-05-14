@@ -27,8 +27,8 @@ run `pip install -r requirements`
 - Conda is needed for this project.  
 - It would be better if your input sketch image has nearly equivelant width and height.  
 - Auto-segmentation doesn't reach the effect of manual one. In comparison, see this case(the former is the auto one):  
-![auto-segmentation](https://github.com/user-attachments/assets/a6954143-39a0-4073-8422-b83327e655be)  
-![manual segmentation in web](https://github.com/user-attachments/assets/36e60e71-403b-4a5e-8b72-21072c416f5d)  
+<img src="https://github.com/user-attachments/assets/a6954143-39a0-4073-8422-b83327e655be"  width="300" />
+<img src="https://github.com/user-attachments/assets/36e60e71-403b-4a5e-8b72-21072c416f5d"  width="300" />   
   
 ## Launch:
 ### Automatically
